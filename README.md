@@ -12,7 +12,7 @@ plugins: ['eslint-plugin-custom-best-practice'],
   }
 ```
 ## Note
- maxlines is the number of max lines allowed for control statments. Value of maxlines must be greater than 0.
+ maxlines is the number of maximum lines allowed for control statments. The Value of maxlines must be greater than 0.
 
  
 
