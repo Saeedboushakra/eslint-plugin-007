@@ -1,21 +1,19 @@
 {
-  "name": "eslint-plugin-custom-best-practice",
+  "name": "eslint-plugin-neo-technologies",
   "version": "1.0.0",
-  "description": "ESLint plugin to encourage best practices",
+  "description": "ESLint plugin to encourage 007 Coding Guidelines",
   "author": "Saeed Bou Shakra",
   "main": "./lib/index.js",
   "directories": {
     "test": "tests"
   },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive tests/rules"
   },
-  "keywords": [
-    "eslint",
-    "eslint-plugin",
-    "lint",
-    "best practice"
-  ],
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.1.0",
