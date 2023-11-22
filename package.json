@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-custom-best-practice",
+  "version": "1.0.0",
+  "description": "ESLint plugin to encourage best practices",
+  "author": "Saeed Bou Shakra",
+  "main": "./lib/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive tests/rules"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "lint",
+    "best practice"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-utils": "^2.1.0",
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
