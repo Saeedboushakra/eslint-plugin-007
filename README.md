@@ -1,5 +1,4 @@
 ## Getting started
-
 ```bash
 npm install --save-dev eslint-plugin-neo-technologies
 ```
@@ -11,7 +10,12 @@ plugins: ['eslint-plugin-neo-technologies'],
     'neo-technologies/if-max-lines': [2, { maxLines: 8 } ],
   }
 ```
-## Note
- maxlines is the number of maximum lines allowed for control statments. The Value of maxlines must be greater than 0.
+## Details
+This plugin is to Enforce best Coding Guidelines
+
+## Rules
+if-max-lines is to enforce max lines in a control statement
+
+
 
  
