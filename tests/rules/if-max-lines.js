@@ -46,7 +46,7 @@ eslintTester.run("if-max-lines", rule, {
       };`,
         parserOptions: { ecmaVersion: 8, sourceType: "module" },
       errors: [
-        { message: `Too many lines {12} in control statement. Maximum allowed: 8` }
+        { message: "Too many lines {12} in control statement. Maximum allowed: 8" }
       ],
     }
   ]
