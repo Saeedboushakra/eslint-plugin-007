@@ -15,8 +15,8 @@ plugins: ['eslint-plugin-neo-technologies'],
 This plugin is to Enforce best Coding Guidelines
 
 ## Rules
-if-max-lines is to enforce max lines in a control statement.
-no-await-without-trycatch is to enforce Await expressions to be executed in a try-catch block.
+1. if-max-lines is to enforce max lines in a control statement.
+2. no-await-without-trycatch is to enforce Await expressions to be executed in a try-catch block.
 
 
 
