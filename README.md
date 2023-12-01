@@ -1,23 +1,29 @@
 ## Getting started
+
 ```bash
 npm install --save-dev eslint-plugin-neo-technologies
 ```
+
 ## In .eslintrc.cjs
-```bash 
+
+```bash
 plugins: ['eslint-plugin-neo-technologies'],
 
  rules: {
     'neo-technologies/if-max-lines': [2, { maxLines: 8 } ],
     'neo-technologies/no-await-without-trycatch': [2],
+    'neo-technologies/max-or-operators': [2],
+    'neo-technologies/return-boolean': [2],
   }
 ```
+
 ## Details
+
 This plugin is to Enforce best Coding Guidelines
 
 ## Rules
+
 1. if-max-lines is to enforce max lines in a control statement.
 2. no-await-without-trycatch is to enforce Await expressions to be executed in a try-catch block.
-
-
-
- 
+3. max-or-operators is to enfore single OR (||) operator inside an if statement.
+4. return-boolean is to enforce Direct return of boolean instead of true/false.

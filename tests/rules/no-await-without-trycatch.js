@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
 
-const rule = require("../../lib/rules/no-await-without-trycatch");
+const rule = require('../../lib/rules/no-await-without-trycatch');
 const RuleTester = require('eslint').RuleTester;
 
 //------------------------------------------------------------------------------
@@ -13,10 +13,10 @@ const RuleTester = require('eslint').RuleTester;
 
 const eslintTester = new RuleTester();
 
-eslintTester.run("no-await-without-trycatch", rule, {
+eslintTester.run('no-await-without-trycatch', rule, {
   valid: [
     {
-        code: `
+      code: `
         const onDelete = async (id) => {
             try {
             await deleteDocument(clientId, id);
@@ -27,8 +27,8 @@ eslintTester.run("no-await-without-trycatch", rule, {
             }
           
            }`,
-        parserOptions: { ecmaVersion: 8, sourceType: "module" }
-    }
+      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+    },
   ],
   invalid: [
     {
@@ -38,10 +38,12 @@ eslintTester.run("no-await-without-trycatch", rule, {
         const updatedDocumentData = allDocuments.filter((doc) => doc.id !== id);
         setAllDocuments(updatedDocumentData);
       }`,
-        parserOptions: { ecmaVersion: 8, sourceType: "module" },
+      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
       errors: [
-        { message: "Await expressions should be executed in a try-catch block." }
+        {
+          message: 'Await expressions should be executed in a try-catch block.',
+        },
       ],
-    }
-  ]
+    },
+  ],
 });

@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
 
-const rule = require("../../lib/rules/if-max-lines");
+const rule = require('../../lib/rules/if-max-lines');
 const RuleTester = require('eslint').RuleTester;
 
 //------------------------------------------------------------------------------
@@ -13,17 +13,17 @@ const RuleTester = require('eslint').RuleTester;
 
 const eslintTester = new RuleTester();
 
-eslintTester.run("if-max-lines", rule, {
+eslintTester.run('if-max-lines', rule, {
   valid: [
     {
-        code: `
+      code: `
         const load = () => {
           if (!isReady) {
             return null;
           }
         };`,
-        parserOptions: { ecmaVersion: 8, sourceType: "module" }
-    }
+      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+    },
   ],
   invalid: [
     {
@@ -44,10 +44,13 @@ eslintTester.run("if-max-lines", rule, {
           }
         }
       };`,
-        parserOptions: { ecmaVersion: 8, sourceType: "module" },
+      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
       errors: [
-        { message: "Too many lines {12} in control statement. Maximum allowed: 8" }
+        {
+          message:
+            'Too many lines {12} in control statement. Maximum allowed: 8',
+        },
       ],
-    }
-  ]
+    },
+  ],
 });
