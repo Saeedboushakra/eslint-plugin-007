@@ -11,9 +11,9 @@ plugins: ['eslint-plugin-neo-technologies'],
 
  rules: {
     'neo-technologies/if-max-lines': [2, { maxLines: 8 } ],
-    'neo-technologies/no-await-without-trycatch': [2],
-    'neo-technologies/max-or-operators': [2],
-    'neo-technologies/return-boolean': [2],
+    'neo-technologies/no-await-without-trycatch': 2,
+    'neo-technologies/max-or-operators': 2,
+    'neo-technologies/return-boolean': 2,
   }
 ```
 

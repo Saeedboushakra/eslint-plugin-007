@@ -34,7 +34,7 @@ eslintTester.run('max-or-operators', rule, {
       parserOptions: { ecmaVersion: 8, sourceType: 'module' },
       errors: [
         {
-          message: 'More than one || operator in a single condition.',
+          message: 'More than one OR (||) operator inside if statement.',
         },
       ],
     },
