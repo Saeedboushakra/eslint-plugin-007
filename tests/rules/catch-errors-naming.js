@@ -4,7 +4,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const rule = require('../../lib/rules/catch_errors_naming');
+const rule = require('../../lib/rules/catch-errors-naming');
 const RuleTester = require('eslint').RuleTester;
 
 //------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ const RuleTester = require('eslint').RuleTester;
 
 const eslintTester = new RuleTester();
 
-eslintTester.run('catch_errors_naming', rule, {
+eslintTester.run('catch-errors-naming', rule, {
   valid: [
     {
       code: `
