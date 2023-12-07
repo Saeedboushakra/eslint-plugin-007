@@ -41,7 +41,6 @@ eslintTester.run('catch-errors-naming', rule, {
         } catch (error){
          console.log(exception)
         }
-      
        }`,
       parserOptions: { ecmaVersion: 8, sourceType: 'module' },
       errors: [

@@ -14,7 +14,8 @@ plugins: ['eslint-plugin-neo-technologies'],
     'neo-technologies/no-await-without-trycatch': 2,
     'neo-technologies/max-or-operators': 2,
     'neo-technologies/return-boolean': 2,
-    'neo-technologies/catch_errors_naming': 2,
+    'neo-technologies/catch-errors-naming': 2,
+    'neo-technologies/avoids-return-mapping': 2,
   }
 ```
 
@@ -28,4 +29,5 @@ This plugin is to Enforce best Coding Guidelines
 2. no-await-without-trycatch is to enforce Await expressions to be executed in a try-catch block.
 3. max-or-operators is to enforce single OR (||) operator inside an if statement.
 4. return-boolean is to enforce Direct return of boolean instead of true/false.
-5. catch_errors_naming is to enforce consistent naming for errors.
+5. catch-errors-naming is to enforce consistent naming for errors.
+6. avoids-return-mapping is to enforce Array Mapping outside return statement.
