@@ -30,4 +30,4 @@ This plugin is to Enforce best Coding Guidelines
 3. max-or-operators is to enforce single OR (||) operator inside an if statement.
 4. return-boolean is to enforce Direct return of boolean instead of true/false.
 5. catch-errors-naming is to enforce consistent naming for errors.
-6. avoid-return-mapping is to enforce Array Mapping outside return statement.
+6. avoid-return-mapping is to enforce Array Mapping outside JSX return statement.
