@@ -16,7 +16,9 @@ plugins: ['eslint-plugin-neo-technologies'],
     'neo-technologies/return-boolean': 2,
     'neo-technologies/catch-errors-naming': 2,
     'neo-technologies/avoid-return-mapping': 2,
-  }
+    'neo-technologies/enums-styling': 2,
+    'neo-technologies/boolean-naming': 2,
+   }
 ```
 
 ## Details
@@ -31,3 +33,5 @@ This plugin is to Enforce best Coding Guidelines
 4. return-boolean is to enforce Direct return of boolean instead of true/false.
 5. catch-errors-naming is to enforce consistent naming for errors.
 6. avoid-return-mapping is to enforce Array Mapping outside JSX return statement.
+7. enums-styling is to enforce consistent Enums naming.
+8. boolean-naming is to enforce consistent Boolean naming.
