@@ -21,7 +21,7 @@ eslintTester.run('boolean-naming', rule, {
       const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
       const [SubmitDisabled, setSubmitDisabled] = useState("");
       `,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
     },
   ],
   invalid: [
@@ -30,7 +30,7 @@ eslintTester.run('boolean-naming', rule, {
       const loading = false;
       const [SubmitDisabled, setSubmitDisabled] = useState(true);
       const [isSubmitDisabled, makeIsSubmitDisabled] = useState('');`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
       errors: [
         {
           message: 'Boolean variable names should start with "is".',

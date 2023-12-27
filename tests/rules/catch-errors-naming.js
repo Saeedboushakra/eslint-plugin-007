@@ -27,7 +27,7 @@ eslintTester.run('catch-errors-naming', rule, {
         }
       
        }`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
     },
   ],
   invalid: [
@@ -42,7 +42,7 @@ eslintTester.run('catch-errors-naming', rule, {
          console.log(exception)
         }
        }`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
       errors: [
         {
           message:

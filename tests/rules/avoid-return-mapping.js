@@ -28,7 +28,7 @@ eslintTester.run('avoid-return-mapping', rule, {
           )
         }`,
       parserOptions: {
-        ecmaVersion: 8,
+        ecmaVersion: 2021,
         sourceType: 'module',
         ecmaFeatures: { jsx: true },
       },
@@ -58,7 +58,7 @@ eslintTester.run('avoid-return-mapping', rule, {
         );
         };`,
       parserOptions: {
-        ecmaVersion: 8,
+        ecmaVersion: 2021,
         sourceType: 'module',
         ecmaFeatures: { jsx: true },
       },

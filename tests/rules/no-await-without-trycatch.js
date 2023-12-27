@@ -27,7 +27,7 @@ eslintTester.run('no-await-without-trycatch', rule, {
             }
           
            }`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
     },
   ],
   invalid: [
@@ -38,7 +38,7 @@ eslintTester.run('no-await-without-trycatch', rule, {
         const updatedDocumentData = allDocuments.filter((doc) => doc.id !== id);
         setAllDocuments(updatedDocumentData);
       }`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
       errors: [
         {
           message: 'Await expressions should be executed in a try-catch block.',

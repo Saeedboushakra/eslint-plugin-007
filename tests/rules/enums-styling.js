@@ -21,7 +21,7 @@ eslintTester.run('enums-styling', rule, {
         STATUS_TODO: "to_do",
         STATUS_IN_PROGRESS: "in_progress",
       };`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
     },
   ],
   invalid: [
@@ -31,7 +31,7 @@ eslintTester.run('enums-styling', rule, {
         STATUS_TODO: "TO_DO",
         status_IN_PROGRESS: "IN_PROGRESS",
       };`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
       errors: [
         {
           message: 'Enum values should be in lowercase.',

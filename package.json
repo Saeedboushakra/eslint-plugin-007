@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-neo-technologies",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "ESLint plugin to encourage 007 Coding Guidelines",
   "author": "Saeed Bou Shakra",
   "main": "./lib/index.js",

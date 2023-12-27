@@ -20,7 +20,7 @@ eslintTester.run('max-or-operators', rule, {
         if (info.includes(label)){
             const name = label;
         }`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
     },
   ],
   invalid: [
@@ -31,7 +31,7 @@ eslintTester.run('max-or-operators', rule, {
         {
          const name = label;
         }`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
       errors: [
         {
           message: 'More than one OR (||) operator inside if statement.',

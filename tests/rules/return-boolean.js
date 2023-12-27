@@ -20,7 +20,7 @@ eslintTester.run('return-boolean', rule, {
       const isVisible = () => {
         return this.isLoading;
       };`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
     },
   ],
   invalid: [
@@ -33,7 +33,7 @@ eslintTester.run('return-boolean', rule, {
         }
         return false;
       };`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
       errors: [
         {
           message: 'Return a boolean directly instead of true/false.',

@@ -22,7 +22,7 @@ eslintTester.run('if-max-lines', rule, {
             return null;
           }
         };`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
     },
   ],
   invalid: [
@@ -44,7 +44,7 @@ eslintTester.run('if-max-lines', rule, {
           }
         }
       };`,
-      parserOptions: { ecmaVersion: 8, sourceType: 'module' },
+      parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
       errors: [
         {
           message:
