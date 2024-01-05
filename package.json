@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive tests/rules"
-  }, 
+  },
   "keywords": [
     "eslint",
     "eslint-plugin",
@@ -32,6 +32,6 @@
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
-    "mocha": "^8.2.1"
+    "mocha": "^10.2.0"
   }
 }
