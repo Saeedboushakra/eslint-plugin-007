@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-neo-technologies",
   "version": "1.0.7",
-  "description": "ESLint plugin to encourage 007 Coding Guidelines",
+  "description": "ESLint plugin to encourage Best Coding Practices",
   "author": "Saeed Bou Shakra",
   "main": "./lib/index.js",
   "directories": {
@@ -13,7 +13,17 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive tests/rules"
-  },
+  }, 
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "neo-technologies",
+    "coding-guidelines",
+    "best-practices",
+    "clean-code",
+    "code-consistency",
+    "linting"
+  ],
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.1.0",

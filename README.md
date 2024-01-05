@@ -18,7 +18,7 @@ plugins: ['eslint-plugin-neo-technologies'],
     'neo-technologies/avoid-return-mapping': 2,
     'neo-technologies/enums-styling': 2,
     'neo-technologies/boolean-naming': 2,
-    'neo-technologies/actions-grouping': 2,
+    'neo-technologies/group-functions': 2,
    }
 ```
 
@@ -36,4 +36,4 @@ This plugin is to Enforce best Coding Guidelines
 6. avoid-return-mapping is to enforce Array Mapping outside JSX return statement.
 7. enums-styling is to enforce consistent Enums naming.
 8. boolean-naming is to enforce consistent Boolean naming.
-9. actions-grouping is to enforce grouping of 'on' actions together and 'handle' actions together.
+9. group-functions is to enforce consistent grouping and ordering for functions.
